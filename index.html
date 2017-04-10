@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Banking Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+
+<body>
+    <header>
+        <h1>Loan Application</h1>
+    </header>
+    <form action="send-email.php" method="post">
+        <fieldset>
+            <legend>
+                Applicant Information
+            </legend>
+            <label>First Name: <input type="text" name="first-name" size="30" maxlength="40"></label><br><br>
+            <label>Middle Initial: <input type="text" name="middle-initial" size= "1" maxlength="1"></label><br /><br />
+            <label>Last Name: <input type="text" name="last-name" size="30" maxlength="40"></label><br /><br />
+            <label>Address: <input type="text" name="address" size="100" maxlength="150"></label><br /><br />
+            <label>Occupation: <input type="text" name="occupation" size="40" maxlength="50"></label><br /><br />
+            <label>Employer: <input type="text" name="employer" size="50" maxlength="60"></label><br /><br />
+            <label>Employer Address: <input type="text" name="employer-address" size="100" maxlength="150"></label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Loan Information
+            </legend>
+            Loan Type: <br />
+            <select name="type-of-loan">
+          <option>Commercial</option>
+          <option>Real Estate</option>
+          <option>Personal</option>
+          <option>Mortgage</option>
+        </select> <br /><br />
+            <label>Loan Amount: <input type="text" name="loan-amount" size="20" maxlength="30"></label><br /><br /> Loan Length: <br />
+            <input type="radio" name="loan-length" value="5-years" checked="checked" /> 5 Years<br />
+            <input type="radio" name="loan-length" value="15-years"> 15 Years<br />
+            <input type="radio" name="loan-length" value="30-years"> 30 Years
+            <br /><br /> Special Conditions:<br />
+            <input type="checkbox" name="special" value="down-payment" checked="checked" /> I have a down payment<br />
+            <input type="checkbox" name="special" value="out-of-state"> Out-of-state resident<br />
+            <input type="checkbox" name="special" value="married"> Married<br />
+            <input type="checkbox" name="special" value="co-sign"> Loan will be co-signed
+        </fieldset>
+        <fieldset>
+            <legend>
+                Additional Information
+            </legend>
+            Additional Comments:
+            <br />
+            <textarea name="comments" rows="10" cols="50"></textarea><br /><br />
+            <label>Applicant Email: * <input class="validate"  type="email" name="email" required="required"/></label><br /><br />
+            <label>Applicant Phone Number: <input type="text" name="phone-number" size="30" maxlength="40" /></label><br /><br />
+            <label>Applicant Linkedin URL: * <input class="validate" type="url" name="Linkedin-URL" required="required"/></label>
+            <p>
+              * Required field 
+            </p>
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

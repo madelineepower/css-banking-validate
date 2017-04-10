@@ -1,0 +1,11 @@
+.validate:required {
+  background-color: rgb(208, 84, 95);
+}
+
+.validate:invalid {
+  background-color: rgb(208, 84, 95);
+}
+
+.validate:valid:required {
+  background-color: rgb(107, 232, 149);
+}
